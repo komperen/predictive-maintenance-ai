@@ -1,0 +1,10 @@
+.env
+*.env
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+*.tgz
+*.zip
+token*.txt
+*-token.txt

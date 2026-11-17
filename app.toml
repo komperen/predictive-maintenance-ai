@@ -1,0 +1,11 @@
+[App]
+Name = "manufacture-predictive-maintenance-agent"
+Version = "4.0.0"
+Title = "Predictive Maintenance AI"
+Description = "Manufacturing predictive maintenance: live IoT monitoring, failure forecast, automatic work orders with engineer dispatch, OEE and energy, spare parts and PM plan, Telegram alerts and an AI Copilot (HPE PCAI Qwen, OpenRouter or simulation)."
+Category = "Other"
+InstanceLifecycle = "ON_DEMAND"
+
+[Runtime]
+Module = "app"
+RoutingMode = "BASE_URL"

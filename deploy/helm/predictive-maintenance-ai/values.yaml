@@ -1,0 +1,58 @@
+replicaCount: 1
+
+ezua:
+  virtualService:
+    endpoint: "pm-ai.${DOMAIN_NAME}"
+    istioGateway: "istio-system/ezaf-gateway"
+
+image:
+  # Built and pushed to GHCR by the GitHub Actions workflow (package must be Public, or set imagePullSecrets).
+  repository: ghcr.io/komperen/predictive-maintenance-ai
+  tag: "4.0.0"
+  pullPolicy: IfNotPresent
+
+# Only needed if the registry is private. Create the secret first in the target namespace:
+#   kubectl -n <ns> create secret docker-registry regcred --docker-server=ghcr.io --docker-username=<user> --docker-password=<PAT>
+imagePullSecrets: []
+#  - name: regcred
+
+service:
+  type: ClusterIP
+  port: 8080
+
+containerPort: 8080
+
+llm:
+  # Qwen served by HPE MLIS (OpenAI-compatible). "/v1" is appended automatically.
+  baseUrl: "https://qwen27bver38.erwin-mustofa-i-c9a8725d.serving.ai-application.imid.local"
+  model: "qwen3.8-27b"
+  # SECURITY: do not put the MLIS token in this file or in Git.
+  # Recommended: create a Secret once with kubectl and name it here (key must be LLM_API_KEY):
+  #   kubectl -n <ns> create secret generic pm-ai-secrets --from-literal=LLM_API_KEY='<MLIS token>'
+  # Optional keys in the same secret: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, OPENROUTER_API_KEY.
+  existingSecret: ""
+  # Only used when existingSecret is empty (the chart then creates a Secret from these values).
+  apiKey: ""
+  telegramBotToken: ""
+  telegramChatId: ""
+  openrouterApiKey: ""
+  # Lab only (self-signed PCAI certificate). For production mount the PCAI CA and verify.
+  verifySsl: false
+
+# Map the MLIS hostname to an IP if cluster DNS cannot resolve *.imid.local.
+# Verify first from inside a pod before enabling.
+hostAliases: []
+#  - ip: "192.168.40.10"
+#    hostnames:
+#      - "qwen27bver38.erwin-mustofa-i-c9a8725d.serving.ai-application.imid.local"
+
+# Extra environment variables (list of name/value)
+env: []
+
+resources:
+  requests:
+    cpu: 250m
+    memory: 512Mi
+  limits:
+    cpu: "1"
+    memory: 1Gi

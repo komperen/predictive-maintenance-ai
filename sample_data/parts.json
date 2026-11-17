@@ -1,0 +1,103 @@
+{
+  "parts": [
+    {
+      "id": "bearing-6205",
+      "name": "Ball bearing 6205-2RS",
+      "category": "Bearings",
+      "stock": 8,
+      "min_stock": 4,
+      "reorder_qty": 12,
+      "unit_cost": 185000,
+      "lead_days": 3,
+      "location": "WH-A1"
+    },
+    {
+      "id": "coupling-insert",
+      "name": "Flexible coupling insert",
+      "category": "Drive",
+      "stock": 3,
+      "min_stock": 2,
+      "reorder_qty": 6,
+      "unit_cost": 420000,
+      "lead_days": 7,
+      "location": "WH-A2"
+    },
+    {
+      "id": "coolant-filter",
+      "name": "Coolant filter cartridge",
+      "category": "Cooling",
+      "stock": 6,
+      "min_stock": 3,
+      "reorder_qty": 10,
+      "unit_cost": 275000,
+      "lead_days": 2,
+      "location": "WH-B1"
+    },
+    {
+      "id": "cooling-fan",
+      "name": "Cooling fan 24V",
+      "category": "Cooling",
+      "stock": 2,
+      "min_stock": 2,
+      "reorder_qty": 4,
+      "unit_cost": 1350000,
+      "lead_days": 10,
+      "location": "WH-B2"
+    },
+    {
+      "id": "seal-kit",
+      "name": "Hydraulic seal kit",
+      "category": "Hydraulics",
+      "stock": 2,
+      "min_stock": 2,
+      "reorder_qty": 5,
+      "unit_cost": 2400000,
+      "lead_days": 14,
+      "location": "WH-C1"
+    },
+    {
+      "id": "hyd-filter",
+      "name": "Hydraulic return filter",
+      "category": "Hydraulics",
+      "stock": 5,
+      "min_stock": 3,
+      "reorder_qty": 8,
+      "unit_cost": 650000,
+      "lead_days": 5,
+      "location": "WH-C2"
+    },
+    {
+      "id": "drive-belt",
+      "name": "Drive belt B-section",
+      "category": "Drive",
+      "stock": 4,
+      "min_stock": 2,
+      "reorder_qty": 6,
+      "unit_cost": 310000,
+      "lead_days": 4,
+      "location": "WH-A3"
+    },
+    {
+      "id": "encoder",
+      "name": "Rotary encoder 1024 ppr",
+      "category": "Electrical",
+      "stock": 1,
+      "min_stock": 1,
+      "reorder_qty": 2,
+      "unit_cost": 3900000,
+      "lead_days": 21,
+      "location": "WH-D1"
+    },
+    {
+      "id": "grease",
+      "name": "Industrial grease 400 g",
+      "category": "Consumables",
+      "stock": 20,
+      "min_stock": 10,
+      "reorder_qty": 24,
+      "unit_cost": 95000,
+      "lead_days": 2,
+      "location": "WH-E1"
+    }
+  ]
+}

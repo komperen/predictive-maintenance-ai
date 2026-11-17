@@ -1,0 +1,102 @@
+{
+  "tasks": [
+    {
+      "id": "pm-01",
+      "machine": "cnc-01",
+      "task": "Spindle lubrication check",
+      "interval_days": 7,
+      "due_in_days": 2
+    },
+    {
+      "id": "pm-02",
+      "machine": "cnc-01",
+      "task": "Coolant concentration check",
+      "interval_days": 14,
+      "due_in_days": 9
+    },
+    {
+      "id": "pm-03",
+      "machine": "cnc-01",
+      "task": "Axis calibration",
+      "interval_days": 90,
+      "due_in_days": -3
+    },
+    {
+      "id": "pm-04",
+      "machine": "conv-02",
+      "task": "Belt tension and alignment",
+      "interval_days": 30,
+      "due_in_days": 12
+    },
+    {
+      "id": "pm-05",
+      "machine": "conv-02",
+      "task": "Gearbox oil change",
+      "interval_days": 180,
+      "due_in_days": 41
+    },
+    {
+      "id": "pm-06",
+      "machine": "hyd-03",
+      "task": "Hydraulic oil sampling",
+      "interval_days": 30,
+      "due_in_days": 1
+    },
+    {
+      "id": "pm-07",
+      "machine": "hyd-03",
+      "task": "Filter replacement",
+      "interval_days": 90,
+      "due_in_days": 27
+    },
+    {
+      "id": "pm-08",
+      "machine": "hyd-03",
+      "task": "Accumulator pre-charge check",
+      "interval_days": 180,
+      "due_in_days": -5
+    },
+    {
+      "id": "pm-09",
+      "machine": "arm-04",
+      "task": "Cable and hose inspection",
+      "interval_days": 30,
+      "due_in_days": 6
+    },
+    {
+      "id": "pm-10",
+      "machine": "arm-04",
+      "task": "Reducer grease",
+      "interval_days": 180,
+      "due_in_days": 75
+    },
+    {
+      "id": "pm-11",
+      "machine": "arm-04",
+      "task": "Tool-centre-point calibration",
+      "interval_days": 60,
+      "due_in_days": 0
+    },
+    {
+      "id": "pm-12",
+      "machine": "comp-05",
+      "task": "Air filter inspection",
+      "interval_days": 14,
+      "due_in_days": 3
+    },
+    {
+      "id": "pm-13",
+      "machine": "comp-05",
+      "task": "Oil and separator change",
+      "interval_days": 180,
+      "due_in_days": 58
+    },
+    {
+      "id": "pm-14",
+      "machine": "comp-05",
+      "task": "Safety valve test",
+      "interval_days": 365,
+      "due_in_days": 120
+    }
+  ]
+}

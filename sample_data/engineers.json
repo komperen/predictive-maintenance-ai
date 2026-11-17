@@ -1,0 +1,95 @@
+{
+  "_comment": "Template roster - edit names / teams / shifts freely. 'team' must match a team used by the work orders (Mechanical Team, Hydraulics Team, Electrical Team). 'on_duty' is the starting duty status; it can be toggled in the app. Optional 'telegram_chat_id': that engineer gets their own Telegram message when a work order is assigned. Optional 'telegram_chat_id': that engineer gets their own Telegram message when a work order is assigned.",
+  "engineers": [
+    {
+      "id": "eng-01",
+      "name": "Budi Santoso",
+      "team": "Mechanical Team",
+      "role": "Senior Mechanical Technician",
+      "shift": "Pagi 07-15",
+      "on_duty": true,
+      "telegram_chat_id": ""
+    },
+    {
+      "id": "eng-02",
+      "name": "Agus Prasetyo",
+      "team": "Mechanical Team",
+      "role": "Mechanical Engineer",
+      "shift": "Pagi 07-15",
+      "on_duty": true,
+      "telegram_chat_id": ""
+    },
+    {
+      "id": "eng-03",
+      "name": "Rizky Maulana",
+      "team": "Mechanical Team",
+      "role": "Maintenance Technician",
+      "shift": "Siang 15-23",
+      "on_duty": false,
+      "telegram_chat_id": ""
+    },
+    {
+      "id": "eng-04",
+      "name": "Dedi Kurniawan",
+      "team": "Mechanical Team",
+      "role": "Maintenance Technician",
+      "shift": "Malam 23-07",
+      "on_duty": false,
+      "telegram_chat_id": ""
+    },
+    {
+      "id": "eng-05",
+      "name": "Slamet Riyadi",
+      "team": "Hydraulics Team",
+      "role": "Hydraulics Specialist",
+      "shift": "Pagi 07-15",
+      "on_duty": true,
+      "telegram_chat_id": ""
+    },
+    {
+      "id": "eng-06",
+      "name": "Hendra Wijaya",
+      "team": "Hydraulics Team",
+      "role": "Hydraulics Technician",
+      "shift": "Siang 15-23",
+      "on_duty": true,
+      "telegram_chat_id": ""
+    },
+    {
+      "id": "eng-07",
+      "name": "Yusuf Hidayat",
+      "team": "Hydraulics Team",
+      "role": "Hydraulics Technician",
+      "shift": "Malam 23-07",
+      "on_duty": false,
+      "telegram_chat_id": ""
+    },
+    {
+      "id": "eng-08",
+      "name": "Siti Nurhaliza",
+      "team": "Electrical Team",
+      "role": "Electrical Engineer",
+      "shift": "Pagi 07-15",
+      "on_duty": true,
+      "telegram_chat_id": ""
+    },
+    {
+      "id": "eng-09",
+      "name": "Andi Setiawan",
+      "team": "Electrical Team",
+      "role": "Automation Technician",
+      "shift": "Siang 15-23",
+      "on_duty": true,
+      "telegram_chat_id": ""
+    },
+    {
+      "id": "eng-10",
+      "name": "Rina Marlina",
+      "team": "Electrical Team",
+      "role": "Electrical Technician",
+      "shift": "Malam 23-07",
+      "on_duty": false,
+      "telegram_chat_id": ""
+    }
+  ]
+}

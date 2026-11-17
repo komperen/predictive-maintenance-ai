@@ -1,0 +1,9 @@
+# Local run:  cp .env.example .env  (fill in the token)  &&  docker compose up --build
+# Then open http://localhost:8080
+services:
+  predictive-maintenance-ai:
+    build: .
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env

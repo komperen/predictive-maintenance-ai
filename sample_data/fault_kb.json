@@ -1,0 +1,120 @@
+{
+  "faults": {
+    "temperature": {
+      "issue": "Overheating",
+      "est_hours": 2.0,
+      "causes": [
+        "Coolant flow reduced or blocked radiator/filter",
+        "Failing cooling fan or pump",
+        "Overload or excessive duty cycle",
+        "Low or degraded lubricant"
+      ],
+      "sop": [
+        "Apply lockout/tagout (LOTO) before opening any guard or cover",
+        "Check coolant level and flow; clean or replace the coolant filter",
+        "Inspect the cooling fan and pump for correct operation",
+        "Check lubricant level and condition; top up if needed",
+        "Reduce the duty cycle until the temperature stabilises",
+        "Record the reading and confirm it stays below the warning limit for 30 minutes"
+      ],
+      "safety": "Hot surfaces: wait for cool-down or use heat-resistant gloves. LOTO is mandatory before opening guards.",
+      "parts": [
+        {
+          "part": "coolant-filter",
+          "qty": 1
+        },
+        {
+          "part": "cooling-fan",
+          "qty": 1
+        }
+      ]
+    },
+    "vibration": {
+      "issue": "Excessive vibration",
+      "est_hours": 3.5,
+      "causes": [
+        "Worn or damaged bearing",
+        "Shaft misalignment",
+        "Loose mounting or foundation bolts",
+        "Rotating part imbalance"
+      ],
+      "sop": [
+        "Apply LOTO and wait for all rotation to stop",
+        "Check and torque mounting and foundation bolts",
+        "Inspect bearings for heat, noise and play; replace if worn",
+        "Check shaft alignment with a dial gauge or laser tool",
+        "Inspect the coupling and replace the insert if cracked",
+        "Run unloaded for 10 minutes and compare vibration to baseline"
+      ],
+      "safety": "Rotating equipment: LOTO and full stop before touching couplings or guards. Never measure alignment while running.",
+      "parts": [
+        {
+          "part": "bearing-6205",
+          "qty": 2
+        },
+        {
+          "part": "coupling-insert",
+          "qty": 1
+        }
+      ]
+    },
+    "pressure": {
+      "issue": "Pressure drop",
+      "est_hours": 3.0,
+      "causes": [
+        "Hydraulic seal or hose-fitting leak",
+        "Clogged return or pressure filter",
+        "Worn pump or relief valve",
+        "Low oil level or aerated oil"
+      ],
+      "sop": [
+        "Depressurise the circuit and apply LOTO; release stored energy in accumulators",
+        "Look for oil leaks at seals, hoses and fittings",
+        "Check oil level and condition; take an oil sample if dark or foamy",
+        "Replace the hydraulic filter",
+        "Replace the seal kit on the leaking cylinder or valve",
+        "Re-pressurise slowly and verify the pressure against the nominal value"
+      ],
+      "safety": "High-pressure fluid can penetrate skin: depressurise first, wear eye protection, never check leaks by hand.",
+      "parts": [
+        {
+          "part": "seal-kit",
+          "qty": 1
+        },
+        {
+          "part": "hyd-filter",
+          "qty": 1
+        }
+      ]
+    },
+    "rpm": {
+      "issue": "Abnormal RPM",
+      "est_hours": 2.5,
+      "causes": [
+        "Drive / VFD fault or wrong parameters",
+        "Belt slip or broken belt",
+        "Motor winding degradation",
+        "Encoder or speed-feedback fault"
+      ],
+      "sop": [
+        "Apply LOTO on the drive and motor supply",
+        "Read the VFD fault history and compare parameters with the backup",
+        "Inspect belt tension and wear; replace if glazed or cracked",
+        "Check the encoder cable and mounting",
+        "Measure motor insulation resistance (megger test)",
+        "Restart and compare actual speed with the setpoint under load"
+      ],
+      "safety": "Electrical hazard: only qualified electrical staff; wait for the DC bus to discharge; LOTO mandatory.",
+      "parts": [
+        {
+          "part": "drive-belt",
+          "qty": 1
+        },
+        {
+          "part": "encoder",
+          "qty": 1
+        }
+      ]
+    }
+  }
+}

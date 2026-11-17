@@ -1,0 +1,6 @@
+apiVersion: v2
+name: predictive-maintenance-ai
+description: Helm chart for Predictive Maintenance AI - manufacturing predictive maintenance, OEE and AI Copilot (H2O Wave) on HPE Private Cloud AI
+type: application
+version: 0.1.0
+appVersion: "4.0.0"
